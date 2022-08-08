@@ -1,0 +1,15 @@
+public class PetlaDoWhile{
+//Za pomocą pętli do while wypisz na ekran liczby dodatnie mniejsze od 99.
+    
+    public static void main(String[] args){
+
+        int i =0;
+        do {
+            System.out.println(i);
+        }
+        while(i++ <99);
+
+
+
+    }
+}
