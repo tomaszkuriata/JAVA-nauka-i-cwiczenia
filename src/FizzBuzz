@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class Fizz {
+
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj liczbe od 1-100");
+
+        int liczba = Integer.valueOf(scanner.nextInt());
+
+        System.out.println("Podałeś liczbę: " + liczba);
+
+
+        if (liczba % 3 == 0 && liczba % 5 == 0) {
+            System.out.println("FIZZ BUZZ");
+            System.out.println(liczba / 3);
+            System.out.println(liczba / 5);
+        } else if (liczba % 5 == 0) {
+            System.out.println("Buzz");
+            System.out.println(liczba / 5);
+        } else if (liczba % 3 == 0) {
+            System.out.println("Fizz");
+            System.out.println(liczba / 3);
+        } else {
+            System.out.println("Nie jest podzielna przez 3 i 5");
+        }
+    }
+}    
