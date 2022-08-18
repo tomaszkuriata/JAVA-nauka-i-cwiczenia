@@ -1,26 +1,102 @@
 import java.util.Scanner;
-public class KosztyPodrozy
+public class Podroz{
+        public static void main(String[] args){
 
-{
-    public static void main(String[] args) {
+            Scanner scanner=new Scanner(System.in);
+            System.out.println("--Koszty podróży--");
+            System.out.println("");
+	
+            System.out.println("Podaj odległość w km:");
+            int iloscKilometrow=scanner.nextInt();
+            System.out.println (iloscKilometrow);
+            
+		
+            System.out.println("Podaj cenę paliwa /l:");
+            double cenaPaliwa=scanner.nextDouble();
+            System.out.println(cenaPaliwa);
+            
+	
+            System.out.println("Podaj spalanie pojazdu:");
+            double spalanieNa100Km=scanner.nextDouble();
+            System.out.println(spalanieNa100Km);
+            
+		
+            String komunikat = (("Koszt podróży w dwie strony = " + ((iloscKilometrow/100)*cenaPaliwa*spalanieNa100Km)*2)+ " zł");
+            
+            System.out.println(komunikat.toUpperCase());
+        }
+        
+     
+    
+}
 
-        Scanner scanner=new Scanner(System.in);
-        System.out.println("-----Koszt podróży autem-----");
 
-        System.out.println("Podaj ilość kilometrów w dwie strony");
-        double km = scanner.nextDouble();
-        km= km/100;
-        System.out.println("Podaj cenę paliwa/litr");
-        double cena =scanner.nextDouble();
-        System.out.println("Podaj spalanie pojazdu");
-        double spalanie = scanner.nextDouble();
-        System.out.println("Odległość: " + km*100 +" km");
-        System.out.println("Cena Pb95: " + cena +" /litr");
-        System.out.println("Spalanie :" + spalanie + " l/100km");
-
-        System.out.println("Koszt paliwa na danym odcinku wynosi " + km*(cena*spalanie) + " zł");
+	
+	
+	
+	
+	
+		
 
 
 
-        double suma = (km*cena*spalanie/4);
-        System.out.println("Koszt na 1 osobę wynosi " + suma + "zł");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+            
+		
+
+
+
+            
+	
+
+
+
+            
+		
+
+          
+
+
+
+        
+    
+
+
+
+	
+	
+	
+	
+	
+		
