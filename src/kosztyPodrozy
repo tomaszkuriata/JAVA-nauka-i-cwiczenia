@@ -26,8 +26,10 @@ public class Podroz{
             System.out.println(komunikat.toUpperCase());
         }
         
-     
-    
+    	
+   	public static double round2DecimalPlace(double komunikat) {
+            return Math.round(komunikat*100.00)/100.00;
+        }
 }
 
 
